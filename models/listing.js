@@ -12,7 +12,13 @@ const listingSchema = new Schema({
        set:(v)=>v===""
        ?"https://images.unsplash.com/photo-1761960084255-7b45bd632251?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1172"
        :v,},
-    price: Number,
+  price: {
+  type: Number,
+  default: 0
+},
+
+ 
+
     location: String,
     country: String,
 });
